@@ -37,7 +37,7 @@ class LangChanger extends Component implements HasForms
     {
         if ($this->language) {
             session(['current_local' => $this->language]);
-            app()->setLocale($this->language);
+            // app()->setLocale($this->language);
             return $this->redirect('/', false);
         }
     }
