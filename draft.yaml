@@ -1,0 +1,603 @@
+models:
+  AccommodationType:
+    id
+    name: nullable string:255
+    slug: nullable string:255 unique
+    status: nullable boolean
+    user_id: id nullable foreign:users.id
+    softDeletes
+    timestamps
+  Advertisement:
+    id
+    section: nullable string:255
+    order: nullable int
+    name: nullable string:255 unique
+    url: nullable string:255
+    banner: nullable string:255
+    alt: nullable string:255
+    quick_preview: nullable string:255
+    status: nullable boolean
+    softDeletes
+    timestamps
+  AdvertiseWithUs:
+    id
+    name: nullable string:255
+    mobile_number: nullable string:20
+    email: nullable string:255
+    company_name: nullable string:255
+    message: nullable string:255
+    status: nullable string:255
+    reason: nullable text
+    user_id: id nullable foreign:users.id
+    softDeletes
+    timestamps
+  Country:
+    id
+    name: nullable string:255
+    slug: nullable string:255 unique
+    status: nullable boolean
+    user_id: id nullable foreign:users.id
+    softDeletes
+    timestamps
+  State:
+    id
+    country_id: id nullable foreign:countries.id
+    name: nullable string:255
+    slug: nullable string:255 unique
+    status: nullable boolean
+    user_id: id nullable foreign:users.id
+    softDeletes
+    timestamps
+  Client:
+    id
+    cover: nullable string:255
+    profile_picture: nullable string:255
+    country_id: id nullable foreign:countries.id
+    state_id: id nullable foreign:states.id
+    street_address: nullable string:255
+    postcode: nullable string:10
+    name: nullable string:255
+    contact_number: nullable string:20
+    password: nullable string:255
+    email: nullable string:255
+    token: nullable string:255 unique
+    verification_code: nullable max:8
+    email_verified_at: nullable timestamp
+    status: nullable boolean
+    extra_fields: nullable json
+    user_id: id nullable foreign:users.id
+    softDeletes
+    timestamps
+  Agent:
+    id
+    cover: nullable string:255
+    profile_picture: nullable string:255
+    name: nullable string:255
+    contact_number: nullable string:20
+    password: nullable string:255
+    email: nullable string:255
+    token: nullable string:255 unique
+    profession: nullable json
+    verification_code: nullable max:8
+    email_verified_at: nullable timestamp
+    status: nullable boolean
+    user_id: id nullable foreign:users.id
+    softDeletes
+    timestamps
+  Agency:
+    id
+    agent_id: id nullable foreign:agents.id
+    agency_name: nullable string:255
+    mobile_number: nullable string:20
+    abn_acn: nullable string:255
+    website_url: nullable string:255
+    do_you_operate_outside_australia: nullable boolean
+    do_you_operate_through_your_website: nullable boolean
+    business_description: nullable text
+    country_id: id nullable foreign:countries.id
+    state_id: id nullable foreign:states.id
+    services: nullable json
+    street_address: nullable string:255
+    postcode: nullable string:10
+    status: nullable boolean
+    softDeletes
+    timestamps
+  Airline:
+    id
+    name: nullable string:255
+    slug: nullable string:255 unique
+    status: nullable boolean
+    user_id: id nullable foreign:users.id
+    softDeletes
+    timestamps
+  VisitPurpose:
+    id
+    name: nullable string:255
+    slug: nullable string:255 unique
+    status: nullable boolean
+    user_id: id nullable foreign:users.id
+    softDeletes
+    timestamps
+  PassportType:
+    id
+    name: nullable string:255
+    slug: nullable string:255 unique
+    status: nullable boolean
+    user_id: id nullable foreign:users.id
+    softDeletes
+    timestamps
+  CarType:
+    id
+    name: nullable string:255
+    slug: nullable string:255 unique
+    status: nullable boolean
+    user_id: id nullable foreign:users.id
+    softDeletes
+    timestamps
+  Amenity:
+    id
+    name: nullable string:255
+    slug: nullable string:255 unique
+    status: nullable boolean
+    user_id: id nullable foreign:users.id
+    softDeletes
+    timestamps
+  BedType:
+    id
+    name: nullable string:255
+    slug: nullable string:255 unique
+    status: nullable boolean
+    user_id: id nullable foreign:users.id
+    softDeletes
+    timestamps
+  FlightClass:
+    id
+    name: nullable string:255
+    slug: nullable string:255 unique
+    status: nullable boolean
+    user_id: id nullable foreign:users.id
+    softDeletes
+    timestamps
+  CruiseAdditionalInfo:
+    id
+    name: nullable string:255
+    slug: nullable string:255 unique
+    status: nullable boolean
+    user_id: id nullable foreign:users.id
+    softDeletes
+    timestamps
+  Bookmark:
+    id
+    agent_id: id nullable foreign:agents.id
+    client_id: id nullable foreign:clients.id
+    offer_id: id foreign:offers.id
+    softDeletes
+    timestamps
+  Car:
+    id
+    user_id: id nullable foreign:users.id
+    client_id: id nullable foreign:clients.id
+    car_type: nullable string:255
+    pick_up_location: nullable string:255
+    drop_off_location: nullable string:255
+    pick_up_datetime: nullable datetime
+    drop_off_datetime: nullable datetime
+    no_of_travelers: nullable string:255
+    no_of_cars: nullable string:255
+    options: nullable json
+    extra_field: nullable json
+    status: nullable boolean
+    softDeletes
+    timestamps
+  CarAgent:
+    id
+    car_id: id nullable foreign:cars.id
+    agent_id: id nullable foreign:agents.id
+    softDeletes
+    timestamps
+  Flight:
+    id
+    user_id: id nullable foreign:users.id
+    client_id: id nullable foreign:clients.id
+    flight_type: nullable string:255
+    from: nullable string:255
+    to: nullable string:255
+    departure_date: nullable date
+    returning_date: nullable date
+    trip_days: nullable string:255
+    no_of_passenger: nullable string:255
+    flight_class_id: id nullable foreign:flight_classes.id
+    is_flexible_date: nullable boolean
+    flexible_date: nullable string:255
+    is_visa: nullable boolean
+    airline_id: id nullable foreign:airlines.id
+    is_insurance: nullable boolean
+    options: nullable json
+    extra_field: nullable json
+    status: nullable boolean
+    softDeletes
+    timestamps
+  FlightAgent:
+    id
+    flight_id: id nullable foreign:flights.id
+    agent_id: id nullable foreign:agents.id
+    softDeletes
+    timestamps
+  Cruise:
+    id
+    user_id: id nullable foreign:users.id
+    client_id: id nullable foreign:clients.id
+    departure_port: nullable string:255
+    destination: nullable string:255
+    length_of_cruise: nullable string:255
+    any_month_from: nullable datetime
+    any_month_to: nullable datetime
+    no_of_travelers: nullable string:255
+    additional_info: nullable string:255
+    options: nullable json
+    extra_field: nullable json
+    status: nullable boolean
+    softDeletes
+    timestamps
+  CruiseAgent:
+    id
+    cruise_id: id nullable foreign:cruises.id
+    agent_id: id nullable foreign:agents.id
+    softDeletes
+    timestamps
+  Hotel:
+    id
+    user_id: id nullable foreign:users.id
+    client_id: id nullable foreign:clients.id
+    desired_city: nullable string:255
+    check_in: nullable string:255
+    check_out: nullable string:255
+    trip_days: nullable int
+    no_of_travelers: nullable string:255
+    accommodation_type: nullable string:255
+    room: nullable string:255
+    rating: nullable string:255
+    other: nullable json
+    options: nullable json
+    extra_field: nullable json
+    status: nullable boolean
+    softDeletes
+    timestamps
+  HotelAgent:
+    id
+    hotel_id: id nullable foreign:hotels.id
+    agent_id: id nullable foreign:agents.id
+    softDeletes
+    timestamps
+  Insurance:
+    id
+    user_id: id nullable foreign:users.id
+    client_id: id nullable foreign:clients.id
+    countries: nullable string:255
+    departure_date: nullable date
+    arrival_date: nullable date
+    no_of_travelers: nullable string:255
+    age_of_travelers: nullable string:255
+    options: nullable json
+    extra_field: nullable json
+    status: nullable boolean
+    softDeletes
+    timestamps
+  InsuranceAgent:
+    id
+    insurance_id: id nullable foreign:insurances.id
+    agent_id: id nullable foreign:agents.id
+    softDeletes
+    timestamps
+  Visa:
+    id
+    user_id: id nullable foreign:users.id
+    client_id: id nullable foreign:clients.id
+    country_of_passport: nullable string:255
+    country_to_visit: nullable string:255
+    passport_type_id: id nullable foreign:passport_types.id
+    pick_up_date: nullable date
+    drop_off_date: nullable date
+    no_of_travelers: nullable string:255
+    visit_purpose_id: id nullable foreign:visit_purposes.id
+    no_of_visit: nullable string:255
+    options: nullable json
+    extra_field: nullable json
+    status: nullable boolean
+    softDeletes
+    timestamps
+  VisaAgent:
+    id
+    visa_id: id nullable foreign:visas.id
+    agent_id: id nullable foreign:agents.id
+    softDeletes
+    timestamps
+  ClientAgentChat:
+    id
+    client_id: id nullable foreign:clients.id
+    agent_id: id nullable foreign:agents.id
+    attachment: nullable string:255
+    image: nullable string:255
+    message: nullable string:255
+    is_seen: nullable boolean
+    status: nullable boolean
+    softDeletes
+    timestamps
+  ClientClientChat:
+    id
+    from: id nullable foreign:clients.id
+    to: id nullable foreign:clients.id
+    attachment: nullable string:255
+    image: nullable string:255
+    message: nullable string:255
+    is_seen: nullable boolean
+    status: nullable boolean
+    softDeletes
+    timestamps
+  Contact:
+    id
+    enquiry_type: nullable string:255
+    full_name: nullable string:255
+    mobile_number: nullable string:20
+    email: nullable string:255
+    message: nullable text
+    status: nullable string
+    reason: nullable text
+    user_id: id nullable foreign:users.id
+    softDeletes
+    timestamps
+  Faq:
+    id
+    category: nullable string:255
+    account_type: nullable string:255
+    question: nullable string:255
+    answer: nullable text
+    status: nullable boolean
+    user_id: id nullable foreign:users.id
+    agent_id: id nullable foreign:agents.id
+    softDeletes
+    timestamps
+  News:
+    id
+    user_id: id nullable foreign:users.id
+    title: nullable string:255
+    slug: nullable string:255
+    thumbnail: nullable string:255
+    short_description: nullable text
+    description: nullable longText
+    is_featured: nullable boolean
+    featured_video: nullable string:255
+    written_by: nullable string:255
+    status: nullable boolean
+    softDeletes
+    timestamps
+  BookmarkNews:
+    id
+    agent_id: id nullable foreign:agents.id
+    client_id: id nullable foreign:clients.id
+    news_id: id foreign:news.id
+    softDeletes
+    timestamps
+  NewsCategory:
+    id
+    name: nullable string:255
+    slug: nullable string:255 unique
+    order: nullable int
+    status: nullable boolean
+    user_id: id nullable foreign:users.id
+    softDeletes
+    timestamps
+  NewsCategoryNews:
+    id
+    news_id: id nullable foreign:news.id
+    news_category_id: id nullable foreign:news_categories.id
+    softDeletes
+    timestamps
+  Newsletter:
+    id
+    email: nullable string:255 unique
+    status: nullable boolean
+    user_id: id nullable foreign:users.id
+    softDeletes
+    timestamps
+  Offer:
+    id
+    user_id: id nullable foreign:users.id
+    agent_id: id nullable foreign:agents.id
+    title: nullable string:255
+    short_description: nullable string:255
+    person: nullable string:255
+    category: nullable string:255
+    is_featured: nullable boolean
+    previous_price: nullable decimal:8,2
+    current_price: nullable decimal:8,2
+    valid_from: nullable date
+    valid_till: nullable date
+    thumbnail: nullable string:255
+    description: nullable longText
+    location: nullable string:255
+    extra_field: nullable json
+    status: nullable boolean
+    softDeletes
+    timestamps
+  OfferLike:
+    id
+    offer_id: id nullable foreign:offers.id
+    client_id: id nullable foreign:clients.id
+    agent_id: id nullable foreign:agents.id
+    softDeletes
+    timestamps
+  Page:
+    id
+    user_id: id nullable foreign:users.id
+    title: nullable string:255
+    subtitle: nullable string:255
+    meta_data: nullable json
+    page_content: nullable json
+    status: nullable boolean
+    softDeletes
+    timestamps
+  PricingPlan:
+    id
+    user_id: id nullable foreign:users.id
+    title: nullable string:255 unique
+    order: nullable int
+    pricing_type: nullable string:255
+    icon: nullable string:255
+    short_description: nullable string:255
+    perks: nullable json
+    status: nullable boolean
+    softDeletes
+    timestamps
+  Quote:
+    id
+    full_name: nullable string:255
+    mobile_number: nullable string:20
+    email: nullable string:255
+    budget: nullable string:255
+    receive_quote_via_call: nullable boolean
+    receive_quote_via_email: nullable boolean
+    receive_quote_via_sms: nullable boolean
+    suitable_time: nullable json
+    comment: nullable text
+    status: nullable string:255
+    reason: nullable text
+    extra_field: nullable json
+    agent_id: id nullable foreign:agents.id
+    user_id: id nullable foreign:users.id
+    softDeletes
+    timestamps
+  QuoteCar:
+    id
+    quote_id: id nullable foreign:quotes.id
+    car_id: id nullable foreign:cars.id
+    softDeletes
+    timestamps
+  QuoteCruise:
+    id
+    quote_id: id nullable foreign:quotes.id
+    cruise_id: id nullable foreign:cruises.id
+    softDeletes
+    timestamps
+  QuoteFlight:
+    id
+    quote_id: id nullable foreign:quotes.id
+    flight_id: id nullable foreign:flights.id
+    softDeletes
+    timestamps
+  QuoteHotel:
+    id
+    quote_id: id nullable foreign:quotes.id
+    hotel_id: id nullable foreign:hotels.id
+    softDeletes
+    timestamps
+  QuoteInsurance:
+    id
+    quote_id: id nullable foreign:quotes.id
+    insurance_id: id nullable foreign:insurances.id
+    softDeletes
+    timestamps
+  QuoteOffer:
+    id
+    quote_id: id nullable foreign:quotes.id
+    offer_id: id nullable foreign:offers.id
+    softDeletes
+    timestamps
+  QuoteOption:
+    id
+    quote_id: id nullable foreign:quotes.id
+    option_id: id nullable foreign:options.id
+    softDeletes
+    timestamps
+  QuoteVisa:
+    id
+    quote_id: id nullable foreign:quotes.id
+    visa_id: id nullable foreign:visas.id
+    softDeletes
+    timestamps
+  Setting:
+    id
+    config: nullable json
+    softDeletes
+    timestamps
+  Gtrip:
+    id
+    user_id: id nullable foreign:users.id
+    client_id: id nullable foreign:clients.id
+    icon: nullable string:255
+    title: nullable string:255
+    extra_field: nullable json
+    status: nullable boolean
+    softDeletes
+    timestamps
+  GtripMember:
+    id
+    gtrip_id: id nullable foreign:gtrips.id
+    client_id: id nullable foreign:clients.id
+    extra_field: nullable json
+    status: nullable boolean
+    softDeletes
+    timestamps
+  Story:
+    id
+    user_id: id nullable foreign:users.id
+    agent_id: id nullable foreign:agents.id
+    client_id: id nullable foreign:clients.id
+    category: nullable string:255
+    content: nullable text
+    image: nullable string:255
+    video: nullable string:255
+    extra_field: nullable json
+    status: nullable boolean
+    softDeletes
+    timestamps
+  StoryTag:
+    id
+    name: nullable string:255 unique
+    status: nullable boolean
+    softDeletes
+    timestamps
+  StoryLike:
+    id
+    client_id: id nullable foreign:clients.id
+    agent_id: id nullable foreign:agents.id
+    story_id: id nullable foreign:stories.id
+    softDeletes
+    timestamps
+  StoryTagStory:
+    id
+    story_tag_id: id nullable foreign:story_tags.id
+    story_id: id nullable foreign:stories.id
+    softDeletes
+    timestamps
+  StoryComment:
+    id
+    story_id: id nullable foreign:stories.id
+    agent_id: id nullable foreign:agents.id
+    client_id: id nullable foreign:clients.id
+    comment: nullable string:255
+    softDeletes
+    timestamps
+  SubscribeAgent:
+    id
+    client_id: id nullable foreign:clients.id
+    agent_id: id nullable foreign:agents.id
+    softDeletes
+    timestamps
+  AgentReview:
+    id
+    agent_id: id nullable foreign:agents.id
+    client_id: id nullable foreign:clients.id
+    name: nullable string:255
+    email: nullable string:255
+    rating: nullable int
+    review: nullable text
+    status: nullable boolean
+    softDeletes
+    timestamps
+  QuoteAgent:
+    id
+    quote_id: id nullable foreign:quotes.id
+    agent_id: id nullable foreign:agents.id
+    softDeletes
+    timestamps

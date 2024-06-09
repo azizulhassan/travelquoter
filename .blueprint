@@ -1,0 +1,247 @@
+created:
+    - database/factories/AccommodationTypeFactory.php
+    - database/factories/AdvertisementFactory.php
+    - database/factories/AdvertiseWithUsFactory.php
+    - database/factories/CountryFactory.php
+    - database/factories/StateFactory.php
+    - database/factories/ClientFactory.php
+    - database/factories/AgentFactory.php
+    - database/factories/AgencyFactory.php
+    - database/factories/AirlineFactory.php
+    - database/factories/VisitPurposeFactory.php
+    - database/factories/PassportTypeFactory.php
+    - database/factories/CarTypeFactory.php
+    - database/factories/AmenityFactory.php
+    - database/factories/BedTypeFactory.php
+    - database/factories/FlightClassFactory.php
+    - database/factories/CruiseAdditionalInfoFactory.php
+    - database/factories/BookmarkFactory.php
+    - database/factories/CarFactory.php
+    - database/factories/CarAgentFactory.php
+    - database/factories/FlightFactory.php
+    - database/factories/FlightAgentFactory.php
+    - database/factories/CruiseFactory.php
+    - database/factories/CruiseAgentFactory.php
+    - database/factories/HotelFactory.php
+    - database/factories/HotelAgentFactory.php
+    - database/factories/InsuranceFactory.php
+    - database/factories/InsuranceAgentFactory.php
+    - database/factories/VisaFactory.php
+    - database/factories/VisaAgentFactory.php
+    - database/factories/ClientAgentChatFactory.php
+    - database/factories/ClientClientChatFactory.php
+    - database/factories/ContactFactory.php
+    - database/factories/FaqFactory.php
+    - database/factories/NewsFactory.php
+    - database/factories/BookmarkNewsFactory.php
+    - database/factories/NewsCategoryFactory.php
+    - database/factories/NewsCategoryNewsFactory.php
+    - database/factories/NewsletterFactory.php
+    - database/factories/OfferFactory.php
+    - database/factories/OfferLikeFactory.php
+    - database/factories/PageFactory.php
+    - database/factories/PricingPlanFactory.php
+    - database/factories/QuoteFactory.php
+    - database/factories/QuoteCarFactory.php
+    - database/factories/QuoteCruiseFactory.php
+    - database/factories/QuoteFlightFactory.php
+    - database/factories/QuoteHotelFactory.php
+    - database/factories/QuoteInsuranceFactory.php
+    - database/factories/QuoteOfferFactory.php
+    - database/factories/QuoteOptionFactory.php
+    - database/factories/QuoteVisaFactory.php
+    - database/factories/SettingFactory.php
+    - database/factories/GtripFactory.php
+    - database/factories/GtripMemberFactory.php
+    - database/factories/StoryFactory.php
+    - database/factories/StoryTagFactory.php
+    - database/factories/StoryLikeFactory.php
+    - database/factories/StoryTagStoryFactory.php
+    - database/factories/StoryCommentFactory.php
+    - database/factories/SubscribeAgentFactory.php
+    - database/factories/AgentReviewFactory.php
+    - database/migrations/2023_12_30_153924_create_accommodation_types_table.php
+    - database/migrations/2023_12_30_153925_create_advertisements_table.php
+    - database/migrations/2023_12_30_153926_create_advertise_with_us_table.php
+    - database/migrations/2023_12_30_153927_create_countries_table.php
+    - database/migrations/2023_12_30_153928_create_states_table.php
+    - database/migrations/2023_12_30_153929_create_clients_table.php
+    - database/migrations/2023_12_30_153930_create_agents_table.php
+    - database/migrations/2023_12_30_153931_create_agencies_table.php
+    - database/migrations/2023_12_30_153932_create_airlines_table.php
+    - database/migrations/2023_12_30_153933_create_visit_purposes_table.php
+    - database/migrations/2023_12_30_153934_create_passport_types_table.php
+    - database/migrations/2023_12_30_153935_create_car_types_table.php
+    - database/migrations/2023_12_30_153936_create_amenities_table.php
+    - database/migrations/2023_12_30_153937_create_bed_types_table.php
+    - database/migrations/2023_12_30_153938_create_flight_classes_table.php
+    - database/migrations/2023_12_30_153939_create_cruise_additional_infos_table.php
+    - database/migrations/2023_12_30_153940_create_bookmarks_table.php
+    - database/migrations/2023_12_30_153941_create_cars_table.php
+    - database/migrations/2023_12_30_153942_create_car_agents_table.php
+    - database/migrations/2023_12_30_153943_create_flights_table.php
+    - database/migrations/2023_12_30_153944_create_flight_agents_table.php
+    - database/migrations/2023_12_30_153945_create_cruises_table.php
+    - database/migrations/2023_12_30_153946_create_cruise_agents_table.php
+    - database/migrations/2023_12_30_153947_create_hotels_table.php
+    - database/migrations/2023_12_30_153948_create_hotel_agents_table.php
+    - database/migrations/2023_12_30_153949_create_insurances_table.php
+    - database/migrations/2023_12_30_153950_create_insurance_agents_table.php
+    - database/migrations/2023_12_30_153951_create_visas_table.php
+    - database/migrations/2023_12_30_153952_create_visa_agents_table.php
+    - database/migrations/2023_12_30_153953_create_client_agent_chats_table.php
+    - database/migrations/2023_12_30_153954_create_client_client_chats_table.php
+    - database/migrations/2023_12_30_153955_create_contacts_table.php
+    - database/migrations/2023_12_30_153956_create_faqs_table.php
+    - database/migrations/2023_12_30_153957_create_news_table.php
+    - database/migrations/2023_12_30_153958_create_bookmark_news_table.php
+    - database/migrations/2023_12_30_153959_create_news_categories_table.php
+    - database/migrations/2023_12_30_154000_create_news_category_news_table.php
+    - database/migrations/2023_12_30_154001_create_newsletters_table.php
+    - database/migrations/2023_12_30_154002_create_offers_table.php
+    - database/migrations/2023_12_30_154003_create_offer_likes_table.php
+    - database/migrations/2023_12_30_154004_create_pages_table.php
+    - database/migrations/2023_12_30_154005_create_pricing_plans_table.php
+    - database/migrations/2023_12_30_154006_create_quotes_table.php
+    - database/migrations/2023_12_30_154007_create_quote_cars_table.php
+    - database/migrations/2023_12_30_154008_create_quote_cruises_table.php
+    - database/migrations/2023_12_30_154009_create_quote_flights_table.php
+    - database/migrations/2023_12_30_154010_create_quote_hotels_table.php
+    - database/migrations/2023_12_30_154011_create_quote_insurances_table.php
+    - database/migrations/2023_12_30_154012_create_quote_offers_table.php
+    - database/migrations/2023_12_30_154013_create_quote_options_table.php
+    - database/migrations/2023_12_30_154014_create_quote_visas_table.php
+    - database/migrations/2023_12_30_154015_create_settings_table.php
+    - database/migrations/2023_12_30_154016_create_gtrips_table.php
+    - database/migrations/2023_12_30_154017_create_gtrip_members_table.php
+    - database/migrations/2023_12_30_154018_create_stories_table.php
+    - database/migrations/2023_12_30_154019_create_story_tags_table.php
+    - database/migrations/2023_12_30_154020_create_story_likes_table.php
+    - database/migrations/2023_12_30_154021_create_story_tag_stories_table.php
+    - database/migrations/2023_12_30_154022_create_story_comments_table.php
+    - database/migrations/2023_12_30_154023_create_subscribe_agents_table.php
+    - database/migrations/2023_12_30_154024_create_agent_reviews_table.php
+    - app/Models/AccommodationType.php
+    - app/Models/Advertisement.php
+    - app/Models/AdvertiseWithUs.php
+    - app/Models/Country.php
+    - app/Models/State.php
+    - app/Models/Client.php
+    - app/Models/Agent.php
+    - app/Models/Agency.php
+    - app/Models/Airline.php
+    - app/Models/VisitPurpose.php
+    - app/Models/PassportType.php
+    - app/Models/CarType.php
+    - app/Models/Amenity.php
+    - app/Models/BedType.php
+    - app/Models/FlightClass.php
+    - app/Models/CruiseAdditionalInfo.php
+    - app/Models/Bookmark.php
+    - app/Models/Car.php
+    - app/Models/CarAgent.php
+    - app/Models/Flight.php
+    - app/Models/FlightAgent.php
+    - app/Models/Cruise.php
+    - app/Models/CruiseAgent.php
+    - app/Models/Hotel.php
+    - app/Models/HotelAgent.php
+    - app/Models/Insurance.php
+    - app/Models/InsuranceAgent.php
+    - app/Models/Visa.php
+    - app/Models/VisaAgent.php
+    - app/Models/ClientAgentChat.php
+    - app/Models/ClientClientChat.php
+    - app/Models/Contact.php
+    - app/Models/Faq.php
+    - app/Models/News.php
+    - app/Models/BookmarkNews.php
+    - app/Models/NewsCategory.php
+    - app/Models/NewsCategoryNews.php
+    - app/Models/Newsletter.php
+    - app/Models/Offer.php
+    - app/Models/OfferLike.php
+    - app/Models/Page.php
+    - app/Models/PricingPlan.php
+    - app/Models/Quote.php
+    - app/Models/QuoteCar.php
+    - app/Models/QuoteCruise.php
+    - app/Models/QuoteFlight.php
+    - app/Models/QuoteHotel.php
+    - app/Models/QuoteInsurance.php
+    - app/Models/QuoteOffer.php
+    - app/Models/QuoteOption.php
+    - app/Models/QuoteVisa.php
+    - app/Models/Setting.php
+    - app/Models/Gtrip.php
+    - app/Models/GtripMember.php
+    - app/Models/Story.php
+    - app/Models/StoryTag.php
+    - app/Models/StoryLike.php
+    - app/Models/StoryTagStory.php
+    - app/Models/StoryComment.php
+    - app/Models/SubscribeAgent.php
+    - app/Models/AgentReview.php
+models:
+    User: { name: string, email: string, email_verified_at: 'datetime nullable', password: string, remember_token: 'string:100 nullable' }
+    AccommodationType: { id: id, name: 'nullable string:255', slug: 'nullable string:255 unique', status: 'nullable boolean', user_id: 'id nullable foreign:users.id', softdeletes: softDeletes, timestamps: timestamps }
+    Advertisement: { id: id, section: 'nullable string:255', order: 'nullable int', name: 'nullable string:255 unique', url: 'nullable string:255', banner: 'nullable string:255', alt: 'nullable string:255', quick_preview: 'nullable string:255', status: 'nullable boolean', softdeletes: softDeletes, timestamps: timestamps }
+    AdvertiseWithUs: { id: id, name: 'nullable string:255', mobile_number: 'nullable string:20', email: 'nullable string:255', company_name: 'nullable string:255', message: 'nullable string:255', status: 'nullable string:255', reason: 'nullable text', user_id: 'id nullable foreign:users.id', softdeletes: softDeletes, timestamps: timestamps }
+    Country: { id: id, name: 'nullable string:255', slug: 'nullable string:255 unique', status: 'nullable boolean', user_id: 'id nullable foreign:users.id', softdeletes: softDeletes, timestamps: timestamps }
+    State: { id: id, country_id: 'id nullable foreign:countries.id', name: 'nullable string:255', slug: 'nullable string:255 unique', status: 'nullable boolean', user_id: 'id nullable foreign:users.id', softdeletes: softDeletes, timestamps: timestamps }
+    Client: { id: id, cover: 'nullable string:255', profile_picture: 'nullable string:255', country_id: 'id nullable foreign:countries.id', state_id: 'id nullable foreign:states.id', street_address: 'nullable string:255', postcode: 'nullable string:10', name: 'nullable string:255', contact_number: 'nullable string:20', password: 'nullable string:255', email: 'nullable string:255', token: 'nullable string:255 unique', verification_code: 'nullable max:8', email_verified_at: 'nullable timestamp', status: 'nullable boolean', user_id: 'id nullable foreign:users.id', softdeletes: softDeletes, timestamps: timestamps }
+    Agent: { id: id, cover: 'nullable string:255', profile_picture: 'nullable string:255', name: 'nullable string:255', contact_number: 'nullable string:20', password: 'nullable string:255', email: 'nullable string:255', token: 'nullable string:255 unique', profession: 'nullable json', verification_code: 'nullable max:8', email_verified_at: 'nullable timestamp', status: 'nullable boolean', user_id: 'id nullable foreign:users.id', softdeletes: softDeletes, timestamps: timestamps }
+    Agency: { id: id, agent_id: 'id nullable foreign:agents.id', agency_name: 'nullable string:255', mobile_number: 'nullable string:20', abn_acn: 'nullable string:255', website_url: 'nullable string:255', do_you_operate_outside_australia: 'nullable boolean', do_you_operate_through_your_website: 'nullable boolean', business_description: 'nullable text', country_id: 'id nullable foreign:countries.id', state_id: 'id nullable foreign:states.id', services: 'nullable json', street_address: 'nullable string:255', postcode: 'nullable string:10', status: 'nullable boolean', softdeletes: softDeletes, timestamps: timestamps }
+    Airline: { id: id, name: 'nullable string:255', slug: 'nullable string:255 unique', status: 'nullable boolean', user_id: 'id nullable foreign:users.id', softdeletes: softDeletes, timestamps: timestamps }
+    VisitPurpose: { id: id, name: 'nullable string:255', slug: 'nullable string:255 unique', status: 'nullable boolean', user_id: 'id nullable foreign:users.id', softdeletes: softDeletes, timestamps: timestamps }
+    PassportType: { id: id, name: 'nullable string:255', slug: 'nullable string:255 unique', status: 'nullable boolean', user_id: 'id nullable foreign:users.id', softdeletes: softDeletes, timestamps: timestamps }
+    CarType: { id: id, name: 'nullable string:255', slug: 'nullable string:255 unique', status: 'nullable boolean', user_id: 'id nullable foreign:users.id', softdeletes: softDeletes, timestamps: timestamps }
+    Amenity: { id: id, name: 'nullable string:255', slug: 'nullable string:255 unique', status: 'nullable boolean', user_id: 'id nullable foreign:users.id', softdeletes: softDeletes, timestamps: timestamps }
+    BedType: { id: id, name: 'nullable string:255', slug: 'nullable string:255 unique', status: 'nullable boolean', user_id: 'id nullable foreign:users.id', softdeletes: softDeletes, timestamps: timestamps }
+    FlightClass: { id: id, name: 'nullable string:255', slug: 'nullable string:255 unique', status: 'nullable boolean', user_id: 'id nullable foreign:users.id', softdeletes: softDeletes, timestamps: timestamps }
+    CruiseAdditionalInfo: { id: id, name: 'nullable string:255', slug: 'nullable string:255 unique', status: 'nullable boolean', user_id: 'id nullable foreign:users.id', softdeletes: softDeletes, timestamps: timestamps }
+    Bookmark: { id: id, agent_id: 'id nullable foreign:agents.id', client_id: 'id nullable foreign:clients.id', offer_id: 'id foreign:offers.id', softdeletes: softDeletes, timestamps: timestamps }
+    Car: { id: id, user_id: 'id nullable foreign:users.id', client_id: 'id nullable foreign:clients.id', car_type: 'nullable string:255', pick_up_location: 'nullable string:255', drop_off_location: 'nullable string:255', pick_up_datetime: 'nullable datetime', drop_off_datetime: 'nullable datetime', no_of_travelers: 'nullable string:255', no_of_cars: 'nullable string:255', options: 'nullable json', extra_field: 'nullable json', status: 'nullable boolean', softdeletes: softDeletes, timestamps: timestamps }
+    CarAgent: { id: id, car_id: 'id nullable foreign:cars.id', agent_id: 'id nullable foreign:agents.id', softdeletes: softDeletes, timestamps: timestamps }
+    Flight: { id: id, user_id: 'id nullable foreign:users.id', client_id: 'id nullable foreign:clients.id', flight_type: 'nullable string:255', from: 'nullable string:255', to: 'nullable string:255', departure_date: 'nullable date', returning_date: 'nullable date', trip_days: 'nullable string:255', no_of_passenger: 'nullable string:255', flight_class_id: 'id nullable foreign:flight_classes.id', is_flexible_date: 'nullable boolean', flexible_date: 'nullable string:255', is_visa: 'nullable boolean', airline_id: 'id nullable foreign:airlines.id', is_insurance: 'nullable boolean', options: 'nullable json', extra_field: 'nullable json', status: 'nullable boolean', softdeletes: softDeletes, timestamps: timestamps }
+    FlightAgent: { id: id, flight_id: 'id nullable foreign:flights.id', agent_id: 'id nullable foreign:agents.id', softdeletes: softDeletes, timestamps: timestamps }
+    Cruise: { id: id, user_id: 'id nullable foreign:users.id', client_id: 'id nullable foreign:clients.id', departure_port: 'nullable string:255', destination: 'nullable string:255', length_of_cruise: 'nullable string:255', any_month_from: 'nullable datetime', any_month_to: 'nullable datetime', no_of_travelers: 'nullable string:255', additional_info: 'nullable string:255', options: 'nullable json', extra_field: 'nullable json', status: 'nullable boolean', softdeletes: softDeletes, timestamps: timestamps }
+    CruiseAgent: { id: id, cruise_id: 'id nullable foreign:cruises.id', agent_id: 'id nullable foreign:agents.id', softdeletes: softDeletes, timestamps: timestamps }
+    Hotel: { id: id, user_id: 'id nullable foreign:users.id', client_id: 'id nullable foreign:clients.id', desired_city: 'nullable string:255', check_in: 'nullable string:255', check_out: 'nullable string:255', trip_days: 'nullable int', no_of_travelers: 'nullable string:255', accommodation_type: 'nullable string:255', room: 'nullable string:255', rating: 'nullable string:255', other: 'nullable string:255', options: 'nullable json', extra_field: 'nullable json', status: 'nullable boolean', softdeletes: softDeletes, timestamps: timestamps }
+    HotelAgent: { id: id, hotel_id: 'id nullable foreign:hotels.id', agent_id: 'id nullable foreign:agents.id', softdeletes: softDeletes, timestamps: timestamps }
+    Insurance: { id: id, user_id: 'id nullable foreign:users.id', client_id: 'id nullable foreign:clients.id', countries: 'nullable string:255', departure_date: 'nullable date', arrival_date: 'nullable date', no_of_travelers: 'nullable string:255', age_of_travelers: 'nullable string:255', options: 'nullable json', extra_field: 'nullable json', status: 'nullable boolean', softdeletes: softDeletes, timestamps: timestamps }
+    InsuranceAgent: { id: id, insurance_id: 'id nullable foreign:insurances.id', agent_id: 'id nullable foreign:agents.id', softdeletes: softDeletes, timestamps: timestamps }
+    Visa: { id: id, user_id: 'id nullable foreign:users.id', client_id: 'id nullable foreign:clients.id', country_of_passport: 'nullable string:255', country_to_visit: 'nullable string:255', passport_type_id: 'id nullable foreign:passport_types.id', pick_up_date: 'nullable date', drop_off_date: 'nullable date', no_of_travelers: 'nullable string:255', visit_purpose_id: 'id nullable foreign:visit_purposes.id', no_of_visit: 'nullable string:255', options: 'nullable json', extra_field: 'nullable json', status: 'nullable boolean', softdeletes: softDeletes, timestamps: timestamps }
+    VisaAgent: { id: id, visa_id: 'id nullable foreign:visas.id', agent_id: 'id nullable foreign:agents.id', softdeletes: softDeletes, timestamps: timestamps }
+    ClientAgentChat: { id: id, client_id: 'id nullable foreign:clients.id', agent_id: 'id nullable foreign:agents.id', attachment: 'nullable string:255', image: 'nullable string:255', message: 'nullable string:255', is_seen: 'nullable boolean', status: 'nullable boolean', softdeletes: softDeletes, timestamps: timestamps }
+    ClientClientChat: { id: id, from: 'id nullable foreign:clients.id', to: 'id nullable foreign:clients.id', attachment: 'nullable string:255', image: 'nullable string:255', message: 'nullable string:255', is_seen: 'nullable boolean', status: 'nullable boolean', softdeletes: softDeletes, timestamps: timestamps }
+    Contact: { id: id, enquiry_type: 'nullable string:255', full_name: 'nullable string:255', mobile_number: 'nullable string:20', email: 'nullable string:255', message: 'nullable text', status: 'nullable string', reason: 'nullable text', user_id: 'id nullable foreign:users.id', softdeletes: softDeletes, timestamps: timestamps }
+    Faq: { id: id, category: 'nullable string:255', account_type: 'nullable string:255', question: 'nullable string:255', answer: 'nullable text', status: 'nullable boolean', user_id: 'id nullable foreign:users.id', agent_id: 'id nullable foreign:agents.id', softdeletes: softDeletes, timestamps: timestamps }
+    News: { id: id, user_id: 'id nullable foreign:users.id', title: 'nullable string:255', slug: 'nullable string:255', thumbnail: 'nullable string:255', short_description: 'nullable text', description: 'nullable longText', is_featured: 'nullable boolean', featured_video: 'nullable string:255', written_by: 'nullable string:255', status: 'nullable boolean', softdeletes: softDeletes, timestamps: timestamps }
+    BookmarkNews: { id: id, agent_id: 'id nullable foreign:agents.id', client_id: 'id nullable foreign:clients.id', news_id: 'id foreign:news.id', softdeletes: softDeletes, timestamps: timestamps }
+    NewsCategory: { id: id, name: 'nullable string:255', slug: 'nullable string:255 unique', order: 'nullable int', status: 'nullable boolean', user_id: 'id nullable foreign:users.id', softdeletes: softDeletes, timestamps: timestamps }
+    NewsCategoryNews: { id: id, news_id: 'id nullable foreign:news.id', news_category_id: 'id nullable foreign:news_categories.id', softdeletes: softDeletes, timestamps: timestamps }
+    Newsletter: { id: id, email: 'nullable string:255 unique', status: 'nullable boolean', user_id: 'id nullable foreign:users.id', softdeletes: softDeletes, timestamps: timestamps }
+    Offer: { id: id, user_id: 'id nullable foreign:users.id', agent_id: 'id nullable foreign:agents.id', title: 'nullable string:255', short_description: 'nullable string:255', person: 'nullable string:255', category: 'nullable string:255', is_featured: 'nullable boolean', previous_price: 'nullable decimal:8,2', current_price: 'nullable decimal:8,2', valid_from: 'nullable date', valid_till: 'nullable date', thumbnail: 'nullable string:255', description: 'nullable longText', location: 'nullable string:255', extra_field: 'nullable json', status: 'nullable boolean', softdeletes: softDeletes, timestamps: timestamps }
+    OfferLike: { id: id, offer_id: 'id nullable foreign:offers.id', client_id: 'id nullable foreign:clients.id', agent_id: 'id nullable foreign:agents.id', softdeletes: softDeletes, timestamps: timestamps }
+    Page: { id: id, user_id: 'id nullable foreign:users.id', title: 'nullable string:255', subtitle: 'nullable string:255', meta_data: 'nullable json', page_content: 'nullable json', status: 'nullable boolean', softdeletes: softDeletes, timestamps: timestamps }
+    PricingPlan: { id: id, user_id: 'id nullable foreign:users.id', title: 'nullable string:255 unique', order: 'nullable int', pricing_type: 'nullable string:255', icon: 'nullable string:255', short_description: 'nullable string:255', perks: 'nullable json', status: 'nullable boolean', softdeletes: softDeletes, timestamps: timestamps }
+    Quote: { id: id, full_name: 'nullable string:255', mobile_number: 'nullable string:20', email: 'nullable string:255', budget: 'nullable string:255', receive_quote_via_call: 'nullable boolean', receive_quote_via_email: 'nullable boolean', receive_quote_via_sms: 'nullable boolean', suitable_time: 'nullable json', comment: 'nullable text', status: 'nullable string:255', reason: 'nullable text', extra_field: 'nullable json', agent_id: 'id nullable foreign:agents.id', user_id: 'id nullable foreign:users.id', softdeletes: softDeletes, timestamps: timestamps }
+    QuoteCar: { id: id, quote_id: 'id nullable foreign:quotes.id', car_id: 'id nullable foreign:cars.id', softdeletes: softDeletes, timestamps: timestamps }
+    QuoteCruise: { id: id, quote_id: 'id nullable foreign:quotes.id', cruise_id: 'id nullable foreign:cruises.id', softdeletes: softDeletes, timestamps: timestamps }
+    QuoteFlight: { id: id, quote_id: 'id nullable foreign:quotes.id', flight_id: 'id nullable foreign:flights.id', softdeletes: softDeletes, timestamps: timestamps }
+    QuoteHotel: { id: id, quote_id: 'id nullable foreign:quotes.id', hotel_id: 'id nullable foreign:hotels.id', softdeletes: softDeletes, timestamps: timestamps }
+    QuoteInsurance: { id: id, quote_id: 'id nullable foreign:quotes.id', insurance_id: 'id nullable foreign:insurances.id', softdeletes: softDeletes, timestamps: timestamps }
+    QuoteOffer: { id: id, quote_id: 'id nullable foreign:quotes.id', offer_id: 'id nullable foreign:offers.id', softdeletes: softDeletes, timestamps: timestamps }
+    QuoteOption: { id: id, quote_id: 'id nullable foreign:quotes.id', option_id: 'id nullable foreign:options.id', softdeletes: softDeletes, timestamps: timestamps }
+    QuoteVisa: { id: id, quote_id: 'id nullable foreign:quotes.id', visa_id: 'id nullable foreign:visas.id', softdeletes: softDeletes, timestamps: timestamps }
+    Setting: { id: id, config: 'nullable json', softdeletes: softDeletes, timestamps: timestamps }
+    Gtrip: { id: id, user_id: 'id nullable foreign:users.id', client_id: 'id nullable foreign:clients.id', icon: 'nullable string:255', title: 'nullable string:255', extra_field: 'nullable json', status: 'nullable boolean', softdeletes: softDeletes, timestamps: timestamps }
+    GtripMember: { id: id, gtrip_id: 'id nullable foreign:gtrips.id', client_id: 'id nullable foreign:clients.id', extra_field: 'nullable json', status: 'nullable boolean', softdeletes: softDeletes, timestamps: timestamps }
+    Story: { id: id, user_id: 'id nullable foreign:users.id', agent_id: 'id nullable foreign:agents.id', client_id: 'id nullable foreign:clients.id', category: 'nullable string:255', content: 'nullable text', image: 'nullable string:255', video: 'nullable string:255', extra_field: 'nullable json', status: 'nullable boolean', softdeletes: softDeletes, timestamps: timestamps }
+    StoryTag: { id: id, name: 'nullable string:255 unique', status: 'nullable boolean', softdeletes: softDeletes, timestamps: timestamps }
+    StoryLike: { id: id, client_id: 'id nullable foreign:clients.id', agent_id: 'id nullable foreign:agents.id', story_id: 'id nullable foreign:stories.id', softdeletes: softDeletes, timestamps: timestamps }
+    StoryTagStory: { id: id, story_tag_id: 'id nullable foreign:story_tags.id', story_id: 'id nullable foreign:stories.id', softdeletes: softDeletes, timestamps: timestamps }
+    StoryComment: { id: id, story_id: 'id nullable foreign:stories.id', agent_id: 'id nullable foreign:agents.id', client_id: 'id nullable foreign:clients.id', comment: 'nullable string:255', softdeletes: softDeletes, timestamps: timestamps }
+    SubscribeAgent: { id: id, client_id: 'id nullable foreign:clients.id', agent_id: 'id nullable foreign:agents.id', softdeletes: softDeletes, timestamps: timestamps }
+    AgentReview: { id: id, agent_id: 'id nullable foreign:agents.id', client_id: 'id nullable foreign:clients.id', name: 'nullable string:255', email: 'nullable string:255', rating: 'nullable int', review: 'nullable text', status: 'nullable boolean', softdeletes: softDeletes, timestamps: timestamps }

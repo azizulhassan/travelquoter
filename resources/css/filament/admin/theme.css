@@ -1,0 +1,61 @@
+@import '/vendor/filament/filament/resources/css/theme.css';
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@config 'tailwind.config.js';
+
+:root {
+    font-size: 14.5px;
+}
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.fi-simple-header .fi-logo {
+    @apply w-36 h-auto !important;
+}
+
+.fi-sidebar-header {
+    @apply px-[12px] bg-[#003663];
+}
+
+.fi-sidebar-header .fi-logo {
+    @apply w-auto h-[64px] !important;
+}
+
+.fi-topbar nav {
+    @apply bg-[#003663];
+}
+
+.fi-topbar nav .fi-icon-btn {
+    @apply bg-white text-[#003663];
+}
+
+.fi-topbar .fi-logo {
+    @apply w-auto h-[50px] !important;
+}
+
+.fi-topbar-item-icon {
+    @apply hidden !important;
+}
+
+.fi-topbar-item-active a, .fi-topbar-item-active button {
+    @apply text-[#003663] !important;
+}
+
+.fi-topbar-item a, .fi-topbar-item button, .fi-topbar-item button svg {
+    @apply text-white hover:text-[#003663] font-medium;
+}
+
+.fi-topbar-item button:hover svg, .fi-topbar-item-active button svg {
+    @apply text-[#003663];
+}
+
+.fi-sidebar-nav {
+    @apply bg-white;
+}
+
+body {
+    @apply bg-gray-100 !important;
+}
